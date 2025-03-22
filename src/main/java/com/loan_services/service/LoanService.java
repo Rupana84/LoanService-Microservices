@@ -20,7 +20,7 @@ public class LoanService {
     private final WebClient webClient; // WebClient to communicate with BookService
 
     public LoanService(WebClient.Builder webClientBuilder) {
-        this.webClient = webClientBuilder.baseUrl("http://localhost:8080").build(); // ✅ Ensure BookService is running on port 8080
+        this.webClient = webClientBuilder.baseUrl("http://localhost:8080").build(); // BookService is running on port 8080
     }
 
     // Fetch book details from BookService
